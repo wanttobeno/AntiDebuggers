@@ -16,3 +16,16 @@ Tencent2016D.cpp 中实现了30种检测调试器的方法，非常的精彩给�
 Ways to anti-debugging on PC.For more information:http://blog.csdn.net/qq_32400847/article/details/52798050
 
 
+
+##### 截图
+
+![snatshot.png](snatshot.png)
+
+
+##### 虚拟机检测
+
+[AntiVirtualMachine](https://github.com/wanttobeno/AntiVirtualMachine)
+
+##### 保护自己的程序不被破解
+
+[DllProtect](https://github.com/wanttobeno/DllProtect)
