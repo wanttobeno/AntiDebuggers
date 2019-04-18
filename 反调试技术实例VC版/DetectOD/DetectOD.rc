@@ -1,0 +1,239 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Chinese (中国) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 4, 2\r\n"
+    "#pragma code_page(936)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\DetectOD.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""l.chs\\afxres.rc""          // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON    DISCARDABLE     "res\\DetectOD.ico"
+IDI_DOG                 ICON    DISCARDABLE     "res\\dog.ico"
+IDI_ICON2               ICON    DISCARDABLE     "res\\home.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOG DISCARDABLE  0, 0, 235, 55
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "关于 反调试实例"
+FONT 9, "宋体"
+BEGIN
+    ICON            IDI_ICON2,IDC_MYICON,11,16,20,20,SS_NOTIFY
+    LTEXT           "官方网站：写意互联网",IDC_COMEON,56,31,88,8,SS_NOTIFY | 
+                    NOT WS_GROUP
+    DEFPUSHBUTTON   "确定",IDOK,178,7,50,14,WS_GROUP
+    CTEXT           "http://ucooper.com",IDC_MYPAGE,40,17,106,8,SS_NOTIFY
+END
+
+IDD_DETECTOD_DIALOG DIALOGEX 0, 0, 443, 200
+STYLE DS_MODALFRAME | WS_MINIMIZEBOX | WS_POPUP | WS_VISIBLE | WS_CAPTION | 
+    WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "反调试实例 写意互联网 ucooper.com"
+FONT 9, "宋体"
+BEGIN
+    DEFPUSHBUTTON   "关 闭(&C)",IDOK,375,18,61,18
+    PUSHBUTTON      "窗口类名",IDC_WNDCLS,13,6,46,18
+    PUSHBUTTON      "IsDebuggerPresent",IDC_ISDEBUGGERPRESENT,13,31,97,18
+    PUSHBUTTON      "EnumWindow",IDC_ENUMWINDOW,63,6,47,18
+    PUSHBUTTON      "枚举进程",IDC_EnumProcess,13,55,96,18
+    PUSHBUTTON      "父进程Explorer",IDC_Explorer,13,79,96,18
+    PUSHBUTTON      "GetTickCount",IDC_GetTickCount,13,103,96,18
+    PUSHBUTTON      "GetStartupInfo",IDC_GetStartupInfo,13,127,96,18
+    PUSHBUTTON      "PebFlags",IDC_PEBFLAGS,13,151,97,18
+    PUSHBUTTON      "CheckRemoteDebuggerPresent",
+                    IDC_CHECKREMOTEDEBUGGERPRESENT,7,175,109,18
+    PUSHBUTTON      "ZwQueryInformationProcess",
+                    IDC_ZwQueryInformationProcess,127,6,109,18
+    PUSHBUTTON      "SetUnhandledExceptionFilter",
+                    IDC_SetUnhandledExceptionFilter,127,175,109,18
+    PUSHBUTTON      "SeDebugPrivilege",IDC_SeDebugPrivilege,127,31,109,18
+    PUSHBUTTON      "NTQueryObject",IDC_NTQueryObject,127,55,109,18
+    PUSHBUTTON      "断点检测",IDC_DectectBreakpoints,127,79,109,18
+    PUSHBUTTON      "函数断点检测",IDC_DectectFuncBreakpoints,127,103,109,18
+    PUSHBUTTON      "BlockInput",IDC_BlockInput,127,151,109,18
+    PUSHBUTTON      "CheckSum",IDC_CHECKSUM,127,127,109,18
+    PUSHBUTTON      "EnableWindow",IDC_EnableWindow,253,6,109,18
+    PUSHBUTTON      "ZwSetInformationThread",IDC_ZwSetInformationThread,253,
+                    31,109,18
+    PUSHBUTTON      "OutputDebugString",IDC_OutputDebugString,253,55,109,18
+    PUSHBUTTON      "GetEntryPoint",IDC_GetEntryPoint,253,152,109,18
+    PUSHBUTTON      "单步异常",IDC_TrapFlag,253,80,109,18
+    PUSHBUTTON      "保护页Guard Pages",IDC_GuardPages,253,103,109,18
+    PUSHBUTTON      "HardwareBreakpoint",IDC_HARDWAREBREAKPOINT,253,127,109,
+                    18
+    PUSHBUTTON      "关 于(&A)",IDC_ABOUT,375,47,61,18
+    CTEXT           "支持我，请访问我的个人站点 www.ucooper.com",IDC_MYPAGE2,
+                    257,183,183,10,SS_NOTIFY
+END
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "080404B0"
+        BEGIN
+            VALUE "CompanyName", "\0"
+            VALUE "FileDescription", "DetectOD Microsoft 基础类应用程序\0"
+            VALUE "FileVersion", "1, 0, 0, 1\0"
+            VALUE "InternalName", "DetectOD\0"
+            VALUE "LegalCopyright", "版权所有 (C) 2010\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "DetectOD.EXE\0"
+            VALUE "ProductName", "DetectOD 应用程序\0"
+            VALUE "ProductVersion", "1, 0, 0, 1\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x804, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 228
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 48
+    END
+
+    IDD_DETECTOD_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 436
+        TOPMARGIN, 6
+        BOTTOMMARGIN, 193
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_ABOUTBOX            "关于 DetectOD(&A)..."
+END
+
+#endif    // Chinese (中国) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE 4, 2
+#pragma code_page(936)
+#endif //_WIN32
+#include "res\DetectOD.rc2"  // non-Microsoft Visual C++ edited resources
+#include "l.chs\afxres.rc"          // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
